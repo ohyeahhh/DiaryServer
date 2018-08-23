@@ -10,7 +10,7 @@ const bodyParser = require('body-parser')
 const express = require('express');
 const app = express();
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(api);
 // 访问静态资源文件 这里是访问所有dist目录下的静态资源文件
