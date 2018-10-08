@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist/ && babel ./ --out-dir es5Code/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log,./webpack.config.js,./es5Code/ --copy-files",
+    "build": "rimraf es5Code/ && babel ./ --out-dir es5Code/ --ignore ./dist,./node_modules,./.babelrc,./package.json,./npm-debug.log,./webpack.config.js,./es5Code/ --copy-files",
     "start": "npm run build && node es5Code/index.js"
   },
   "author": "ohyeah",
